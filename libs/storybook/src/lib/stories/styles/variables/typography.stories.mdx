@@ -1,0 +1,32 @@
+import { Meta, Story } from '@storybook/addon-docs';
+
+<Meta title="Styles/Available variables/Typography" parameters={{ viewMode: 'docs', layout: 'fullscreen' }} />
+
+export const sizes = [
+  { name: '50', value: 10 },
+  { name: '70', value: 12 },
+  { name: '80', value: 14 },
+  { name: '100', value: 16 },
+  { name: '200', value: 18 },
+  { name: '220', value: 20 },
+  { name: '250', value: 24 },
+  { name: '300', value: 28 },
+  { name: '350', value: 32 },
+  { name: '400', value: 36 },
+  { name: '500', value: 48 },
+];
+
+# Font size scale
+
+CVI has a range of font sizes to choose from.
+
+You can pick a font size by employing a CSS variable (prefixed with `--cvi-font-size`) or using a `get-font-size()` Sass function.
+
+<Story name="Font sizes" height="650px">
+  {{
+    props: { sizes },
+    template: `
+      <cvi-ng-storybook-type-tester *ngFor="let size of sizes" [size]="size.name">Font size: {{ size.value }}px. City trail fallen select drop she tower else flight glass.</cvi-ng-storybook-type-tester>
+    `,
+  }}
+</Story>

@@ -4,14 +4,18 @@
     "emitDecoratorMetadata": true
   },
 
-  "exclude": ["../**/*.spec.ts"],
+  "exclude": ["../**/*.spec.ts", "jest.config.ts"],
   "include": [
+    "../../**/src/lib/**/*.stories.ts",
     "../src/**/*.stories.ts",
     "../src/**/*.stories.js",
     "../src/**/*.stories.jsx",
     "../src/**/*.stories.tsx",
     "../src/**/*.stories.mdx",
-    "*.js",
-    "../src/**/*.component.ts"
+    "*.js"
+  ],
+  "files": [
+    "../../../globals.d.ts",
+    "../../my-btn/src/index.ts"
   ]
 }

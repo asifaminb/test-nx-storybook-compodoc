@@ -1,0 +1,20 @@
+{
+  "ids": [
+    "TODOS",
+    "Intro",
+    "Styles",
+    [
+      "How to install",
+      "How to use",
+      "How to contribute",
+      "Available variables",
+      ["Overview", "Colors", "Typography", "Spacing"]
+    ],
+    "Angular",
+    [
+      "Installation",
+      "my-btn",
+      "ButtonComponent"
+    ]
+  ]
+}
